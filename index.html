@@ -12,6 +12,63 @@
     <title>Pizza Form</title>
 </head>
 <body>
-    
+    <form action="" method="POST">
+        <!-- Asking users for passwords and username -->
+        <fieldset>
+            <legend>User Information</legend>
+            <ul>
+                <li>
+                    <label for="name">Username</label>
+                    <input type="text" id="name" name="user.name">
+                </li>
+                <li>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="user.password">
+                </li>
+                
+            </ul>
+        </fieldset>
+
+        <!-- Which Drink They Want: Radio -->
+
+        <fieldset>
+            <legend>What drink do you want?</legend>
+            <ul>
+                <label for="soda"></label>
+                <li><input type="radio" id="soda" name="user.soda">Coke</li>
+                <li><input type="radio" id="soda" name="user.soda">Diet Coke</li>
+                <li><input type="radio" id="soda" name="user.soda">Sprite</li>
+                <li><input type="radio" id="soda" name="user.soda">Water</li>
+            </ul>
+        </fieldset>
+
+        <!-- Asking for the toppings: Checkbox -->
+        <fieldset>
+            <legend>Pizza Preference</legend>
+            <ul>
+                <label for="pizza"></label>
+                <li><input type="checkbox" id="pizza" name="user.plain">Plain</li>
+                <li><input type="checkbox" id="pizza" name="user.pepperone">Pepperone</li>
+                <li><input type="checkbox" id="pizza" name="user.chicken">Chicken</li>
+                <li><input type="checkbox" id="pizza" name="user.sausage">Sausage</li>
+            </ul>
+        </fieldset>
+
+        <!-- Special Instructions: Textarea and Button -->
+
+        <fieldset>
+            <legend>Special Instructions</legend>
+            <ul>
+                <li>
+                    <label for="instructions">Special Instructions:</label><br>
+                    <textarea id="instructions" name="user.instructions" cols="30" rows="10"></textarea>
+                </li>
+                
+                <button type="submit">Submit</button>
+                
+            </ul>
+        </fieldset>
+
+    </form>
 </body>
 </html>
